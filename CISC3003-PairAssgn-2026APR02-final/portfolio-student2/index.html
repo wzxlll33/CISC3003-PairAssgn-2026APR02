@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar | Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Oscar</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Business Site</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Hello, I'm</p>
+                <h1>Oscar</h1>
+                <h2>Frontend Developer & UI Designer</h2>
+                <p class="hero-description">I specialize in creating beautiful user interfaces and seamless user experiences. Passionate about design systems and modern CSS.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../images/partner2.jpg" alt="Oscar">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="../images/partner2.jpg" alt="About Oscar">
+                </div>
+                <div class="about-text">
+                    <h3>I'm a creative developer based in Macau</h3>
+                    <p>Currently studying at the University of Macau with a focus on Human-Computer Interaction and frontend technologies. I bridge the gap between design and development.</p>
+                    <p>When not designing, I enjoy photography, exploring coffee shops, and contributing to design communities.</p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-title">Name:</span>
+                            <span class="info-value">Oscar</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Student ID:</span>
+                            <span class="info-value">DC22888</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">dc22888@um.edu.mo</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Location:</span>
+                            <span class="info-value">Macau, China</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skills-text">
+                    <h3>Design & Development Expertise</h3>
+                    <p>I combine aesthetic sensibility with technical skills to create delightful digital experiences. My focus is on user-centered design and performant code.</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-figma"></i>
+                        <h4>UI/UX Design</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h4>Tailwind CSS</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h4>JavaScript</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <i class="fab fa-vuejs"></i>
+                        <h4>Vue.js</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <i class="fab fa-sass"></i>
+                        <h4>Sass/SCSS</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Responsive Design</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Easy Bank -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../images/project-easybank.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <!-- FIXED: Demo button link -->
+                            <a href="../demo-easybank/index.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Easy Bank UI</h3>
+                        <p>Modern fintech interface with focus on accessibility.</p>
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Real Estate -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../images/project-realestate.jpg" alt="Project 2">
+                        <div class="project-overlay">
+                            <!-- FIXED: Demo button link -->
+                            <a href="../demo-realestate/index.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Property Finder</h3>
+                        <p>Real estate platform with advanced search UX.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Restaurant -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../images/project-restaurant.jpg" alt="Project 3">
+                        <div class="project-overlay">
+                            <!-- FIXED: Demo button link -->
+                            <a href="../demo-restaurant/index.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dining Experience</h3>
+                        <p>Restaurant booking system with elegant UI.</p>
+                        <div class="project-tags">
+                            <span>UI Design</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>dc22888@um.edu.mo</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+86 123 1234 1234</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>University of Macau, Macau</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Oscar. All rights reserved. | CISC3003 Web Programming - 2026</p>
+            <p class="student-info">Student ID: DC22888</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+        // FIXED: Smooth scroll with proper handling for both #links and external links
+        document.querySelectorAll('a[href^="#"], a[href^="../"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                
+                // Handle external links (starting with ../)
+                if (href.startsWith('../')) {
+                    // Let default behavior happen for external links
+                    return;
+                }
+                
+                // Handle anchor links
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
+            });
+        });
+        
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>

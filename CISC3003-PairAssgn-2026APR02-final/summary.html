@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary | Pair Studio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* Summary Page Specific Styles */
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6rem 0 3rem;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .page-header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .summary-section {
+            padding: 3rem 0;
+        }
+        
+        .summary-section:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+        
+        /* Fixed: Proper numbered list styling */
+        .numbered-list {
+            counter-reset: item;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .numbered-list li {
+            counter-increment: item;
+            margin-bottom: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: relative;
+            padding-left: 4rem;
+        }
+        
+        .numbered-list li::before {
+            content: counter(item);
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #667eea;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .numbered-list li strong {
+            display: block;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        /* Content styling */
+        .content-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+        }
+        
+        .content-box h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .content-box ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .content-box li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .numbered-list li {
+                padding-left: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Pair<span>Studio</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="profile.html" class="nav-link">Profile</a></li>
+                <li><a href="summary.html" class="nav-link active">Summary</a></li>
+                <li><a href="showcase.html" class="nav-link">Showcase</a></li>
+                <li><a href="qualification.html" class="nav-link">Qualification</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Project Summary</h1>
+            <p>CISC3003 Web Programming - Pair Assignment</p>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="summary-section">
+        <div class="container">
+            <h2 class="section-title">1. Project Overview</h2>
+            <div class="content-box">
+                <p><strong>Pair Studio</strong> is a freelance web design agency website created for the CISC3003 Web Programming course. The website showcases our skills, services, and portfolio projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site Structure -->
+    <section class="summary-section">
+        <div class="container">
+            <h2 class="section-title">2. Site Structure</h2>
+            <!-- Fixed: Using custom numbered list with proper CSS counters -->
+            <ol class="numbered-list">
+                <li>
+                    <strong>Home (index.html)</strong>
+                    Landing page with hero section, team introduction, and services preview
+                </li>
+                <li>
+                    <strong>Profile (profile.html)</strong>
+                    Detailed information about both team members and contact form
+                </li>
+                <li>
+                    <strong>Summary (summary.html)</strong>
+                    Project documentation and technical overview
+                </li>
+                <li>
+                    <strong>Showcase (showcase.html)</strong>
+                    Portfolio projects, accomplishments, and business offers
+                </li>
+                <li>
+                    <strong>Qualification (qualification.html)</strong>
+                    Certifications, skills, and professional credentials
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Technologies Used -->
+    <section class="summary-section">
+        <div class="container">
+            <h2 class="section-title">3. Technologies Used</h2>
+            <div class="content-box">
+                <h3>Frontend Technologies</h3>
+                <ul>
+                    <li><strong>HTML5</strong> - Semantic markup and structure</li>
+                    <li><strong>CSS3</strong> - Styling, animations, and responsive design</li>
+                    <li><strong>JavaScript</strong> - Interactive features and form validation</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h3>Development Tools</h3>
+                <ul>
+                    <li>Eclipse IDE for Web Development</li>
+                    <li>Chrome DevTools for debugging</li>
+                    <li>Git for version control</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="summary-section">
+        <div class="container">
+            <h2 class="section-title">4. Key Features Implemented</h2>
+            <ol class="numbered-list">
+                <li>
+                    <strong>Responsive Design</strong>
+                    Mobile-first approach with breakpoints at 768px and 1024px
+                </li>
+                <li>
+                    <strong>Interactive Navigation</strong>
+                    Hamburger menu for mobile devices with smooth animations
+                </li>
+                <li>
+                    <strong>Contact Form</strong>
+                    Functional form with validation and user feedback
+                </li>
+                <li>
+                    <strong>Portfolio Showcase</strong>
+                    Project demos with live preview links
+                </li>
+                <li>
+                    <strong>CSS Animations</strong>
+                    Hover effects, counters, and scroll-triggered animations
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pair Studio</h3>
+                    <p>Creating digital experiences that matter.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="summary.html">Summary</a>
+                    <a href="showcase.html">Showcase</a>
+                    <a href="qualification.html">Qualification</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: contact@pairstudio.com</p>
+                    <p>Phone: +86 123 1234 1234</p>
+                    <p>Location: Macau, China</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>CISC3003 Web Programming - 2026: Pair XX DC22811 + Kris | DC22888 + Oscar</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
